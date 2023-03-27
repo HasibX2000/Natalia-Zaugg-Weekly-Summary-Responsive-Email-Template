@@ -33,7 +33,8 @@
         color: #000;
       }
       .setTable td {
-        padding-right: 25px;
+        padding-right: 10px;
+        padding-bottom: 15px;
       }
       th {
         text-align: left;
@@ -48,12 +49,33 @@
       .ratingtable th{
         min-width: 100px;
       }
-      @media only screen and (max-width:400px){
+      @media only screen and (max-width:550px){
         .pdReset{
-          padding: 10px !important
+          padding: 30px !important
         }
-        table{
-          max-width: 600px !important
+      .responsiveClass{
+        padding-bottom: 30px !important;
+      }
+      .main-bar {
+          width: 200px !important;
+        }
+        .t150 {
+          width: 50% !important;
+        }
+        .t75 {
+          width: 25% !important;
+        }
+      }
+    
+      @media only screen and (max-width: 400px) {
+        .main-bar {
+          width: 150px !important;
+        }
+        .t150 {
+          width: 50% !important;
+        }
+        .t75 {
+          width: 25% !important;
         }
       }
     </style>
@@ -103,13 +125,9 @@
                   align="center"
                   valign="middle"
                   style="
-                    background: rgb(3, 208, 144);
-                    background: linear-gradient(
-                      90deg,
-                      rgba(3, 208, 144, 0.09287464985994398) 46%,
-                      rgba(0, 176, 220, 1) 100%
-                    );
+                   background: #FFFFFF;
                     padding: 50px;
+                    padding-bottom: 10px;
                     border-radius: 15px;
                   "
                   class="pdReset"
@@ -124,39 +142,9 @@
                   </a>
                 </td>
               </tr>
-            </table>
-          </td>
-        </tr>
-        <!-- HEADER SECTION  -->
-
-        <tr>
-          <td height="20px" style="font-size: 20pxpx; line-height: 20px"></td>
-        </tr>
-
-        <!-- HEADER TEXT  -->
-
-        <tr>
-          <td
-            align="center"
-            height="100%"
-            valign="middle"
-            width="100%"
-            style="padding: 20px; border-radius: 15px; background: #ffffff"
-          >
-            <!--[if (gte mso 9)|(IE)]>
-    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
-    <tr>
-    <td align="center" valign="middle" width="600">
-    <![endif]-->
-            <table
-              align="center"
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-              width="100%"
-              style="max-width: 600px; padding: 5px"
-              bgcolor="#ffffff"
-            >
+              
+          
+              
               <tr>
                 <td
                   align="center"
@@ -166,13 +154,13 @@
                   Weekly Summary
                 </td>
               </tr>
-
+              
               <tr>
-                <td height="5" style="font-size: 5px; line-height: 5px"></td>
+                <td height="10" style="font-size:10px; line-height:10px;"></td>
               </tr>
-
+              
               <tr>
-                <td align="center" valign="middle" style="font-size: 16px">
+                <td align="center" valign="middle" style="font-size: 16px" class="pdReset">
                   This is your first Weekly Summary, the most important facts
                   based on your online reviews from the past week. You will be
                   receiving this summary every monday at 8:00 (CET). If you
@@ -180,47 +168,13 @@
                   your user settings.
                 </td>
               </tr>
-            </table>
-            <!--[if (gte mso 9)|(IE)]>
-    </td>
-    </tr>
-    </table>
-    <![endif]-->
-          </td>
-        </tr>
-
-        <!-- HEADER TEXT  -->
-
-        <tr>
-          <td height="20" style="font-size: 20px; line-height: 20px"></td>
-        </tr>
-
-        <!-- date  -->
-
-        <tr>
-          <td
-            align="center"
-            height="100%"
-            valign="middle"
-            width="100%"
-            style="padding: 20px; border-radius: 15px; background: #ffffff"
-          >
-            <!--[if (gte mso 9)|(IE)]>
-            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
-            <tr>
-            <td align="center" valign="middle" width="600">
-            <![endif]-->
-            <table
-              align="center"
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-              width="100%"
-              style="max-width: 600px"
-              bgcolor="#ffffff"
-            >
-              <!-- DATE  -->
+              
               <tr>
+                <td height="20" style="font-size:20px; line-height:20px;"></td>
+              </tr>
+              
+               <!-- DATE  -->
+               <tr>
                 <td
                   align="center"
                   valign="middle"
@@ -241,19 +195,21 @@
                 </td>
               </tr>
               <!-- CALENDAR WEEK -->
-            </table>
-            <!--[if (gte mso 9)|(IE)]>
-            </td>
+            <tr>
+              <td height="40" style="font-size:40px; line-height:40px;"></td>
             </tr>
-            </table>
-            <![endif]-->
+          </table>
           </td>
         </tr>
+        <!-- HEADER SECTION  -->
 
-        <!-- date  -->
         <tr>
-          <td height="20" style="font-size: 20px; line-height: 20px"></td>
+          <td height="20px" style="font-size: 20pxpx; line-height: 20px"></td>
         </tr>
+
+
+   
+     
         <!-- WEEKLY SUMMARY - middle METRICS  -->
         <!-- TEXT SECTION  -->
         <tr>
@@ -281,7 +237,7 @@
               <tr>
                 <td align="center" valign="middle" style="font-size: 16px">
                   Here is your weekly report for
-                  <span style="font-weight: bold">Vapiano UK</span> as well as
+                  <span style="font-weight: bold"><b>Vapiano UK</b></span> as well as
                   performance change compared to the previous week
                 </td>
               </tr>
@@ -351,10 +307,10 @@
                           style="font-size: 16px"
                         >
                           <img
-                            src="https://i.postimg.cc/KvxBm7xM/score.png"
+                            src="https://i.postimg.cc/RZZXMRFb/rescore.png"
                             alt="score"
                             width="100%"
-                            style="max-width: 50px"
+                            style="max-width: 100px"
                           />
                         </td>
                       </tr>
@@ -427,10 +383,10 @@
                           style="font-size: 16px"
                         >
                           <img
-                            src="https://i.postimg.cc/qMvqm1pj/review.png"
+                            src="https://i.postimg.cc/dVNnDyZQ/star.png"
                             alt="score"
                             width="100%"
-                            style="max-width: 50px"
+                            style="max-width:100px"
                           />
                         </td>
                       </tr>
@@ -503,10 +459,10 @@
                           style="font-size: 16px"
                         >
                           <img
-                            src="https://i.postimg.cc/Jn30Fgyd/responserate.png"
+                            src="https://i.postimg.cc/nhYzF4Xg/progress.png"
                             alt="score"
                             width="100%"
-                            style="max-width: 50px"
+                            style="max-width: 30px"
                           />
                         </td>
                       </tr>
@@ -578,10 +534,10 @@
                           style="font-size: 16px"
                         >
                           <img
-                            src="https://i.postimg.cc/qBLgXPHN/responsetime.png"
+                            src="https://i.postimg.cc/KvxBm7xM/score.png"
                             alt="score"
                             width="100%"
-                            style="max-width: 50px"
+                            style="max-width: 30px"
                           />
                         </td>
                       </tr>
@@ -673,7 +629,7 @@
                 <td
                   align="left"
                   valign="middle"
-                  style="font-size: 12px"
+                  style="font-size: 15px"
                   class="setTable"
                 >
                   <table
@@ -683,86 +639,85 @@
                     align="left"
                   >
                     <th></th>
-                    <th style="padding-right: 10px">re:Score</th>
-                    <th style="padding-right: 10px">Reviews</th>
-                    <th style="padding-right: 10px">Response Rate</th>
-                    <th>Response Time</th>
+                    <th style="padding-right: 10px; font-size: 18px; padding-bottom: 10px;">re:Score</th>
+                    <th style="padding-right: 10px; font-size: 18px; padding-bottom: 10px;">Reviews</th>
+                    <th style="padding-right: 10px; font-size: 18px; padding-bottom: 10px;">RR</th>
+                    <th style="font-size: 18px; padding-bottom: 10px;">RT</th>
                     <tr>
                       <td style="text-decoration: underline" width="200">
                         Vapiano, Edinburgh
                       </td>
-                      <td class="blue-text">
-                        87.5<span class="green-text"> (+0.7)</span>
-                      </td>
-                      <td>11<span class="green-text"> (+2)</span></td>
-                      <td>87%<span class="red-text"> (-4%)</span></td>
-                      <td>3 days<span class="red-text"> (+1)</span></td>
+                      <td class="dark-text">
+                        87.5 (<span class="green-text">+0.7</span>)</td>
+                      <td>11 (<span class="green-text">+2</span>)</td>
+                      <td>87% (<span class="red-text">-4%</span>)</td>
+                      <td>3 d (<span class="red-text">+1</span>)</td>
                     </tr>
                     <tr>
                       <td style="text-decoration: underline" width="200">
                         Vapiano Tottenham Court Road, London
                       </td>
-                      <td class="blue-text">
-                        76.5<span class="red-text"> (-0.4)</span>
+                      <td class="dark-text">
+                        76.5 (<span class="red-text">-0.4</span>)
                       </td>
-                      <td>34<span class="dark-text"> (0)</span></td>
-                      <td>75%<span class="red-text"> (-4%)</span></td>
-                      <td>1 days<span class="green-text"> (-2)</span></td>
+                      <td>34 (<span class="dark-text">0</span>)</td>
+                      <td>75% (<span class="red-text">-4%</span>)</td>
+                      <td>1 d (<span class="green-text">-2</span>)</td>
                     </tr>
                     <tr>
                       <td style="text-decoration: underline" width="200">
                         Vapiano, Manchester
                       </td>
-                      <td class="blue-text">
-                        69.5<span class="red-text"> (-1.2)</span>
+                      <td class="dark-text">
+                        69.5 (<span class="red-text">-1.2</span>)
                       </td>
-                      <td>20<span class="red-text"> (-2)</span></td>
-                      <td>71%<span class="red-text"> (-4%)</span></td>
-                      <td>3 days<span class="red-text"> (+1)</span></td>
+                      <td>20 (<span class="red-text">-2</span>)</td>
+                      <td>71% (<span class="red-text">-4%</span>)</td>
+                      <td>3 d (<span class="red-text">+1</span>)</td>
                     </tr>
-                    <tr>
+                    <tr> 
                       <td style="text-decoration: underline" width="200">
                         Vapiano UK
                       </td>
-                      <td class="blue-text">
-                        69.0<span class="dark-text"> (0)</span>
+                      <td class="dark-text">
+                        69.0 (<span class="dark-text">0</span>)
                       </td>
-                      <td>86<span class="green-text"> (+13)</span></td>
-                      <td>80%<span class="green-text"> (+2%)</span></td>
-                      <td>1 days<span class="dark-text"> (0)</span></td>
+                      <td>86 (<span class="green-text">+13</span>)</td>
+                      <td>80% (<span class="green-text">+2%</span>)</td>
+                      <td>1 d (<span class="dark-text">0</span>)</td>
                     </tr>
                     <tr>
                       <td style="text-decoration: underline" width="200">
                         Vapiano Great POrtland Street, London
                       </td>
-                      <td class="blue-text">
-                        68.5<span class="green-text"> (+0.2)</span>
+                      <td class="dark-text">
+                        68.5 (<span class="green-text">+0.2</span>)
                       </td>
-                      <td>3<span class="green-text"> (+5)</span></td>
-                      <td>81.1%<span class="red-text"> (-4%)</span></td>
-                      <td>3 days<span class="red-text"> (+1)</span></td>
+                      <td>3 (<span class="green-text">+5</span>)</td>
+                      <td>81.1% (<span class="red-text">-4%</span>)</td>
+                      <td>3 d (<span class="red-text">+1</span>)</td>
                     </tr>
                     <tr>
                       <td style="text-decoration: underline" width="200">
                         Vapiano Tower Bridge, London
                       </td>
-                      <td class="blue-text">
-                        68.3<span class="green-text"> (+0.2)</span>
+                      <td class="dark-text">
+                        68.3 (<span class="green-text">+0.2</span>)
                       </td>
-                      <td>6<span class="green-text"> (+5)</span></td>
-                      <td>60%<span class="green-text"> (+4%)</span></td>
-                      <td>3 days<span class="red-text"> (+1)</span></td>
+                      <td>6 (<span class="green-text">+5</span>)</td>
+                      <td>60% (<span class="green-text">+4%</span>)</td>
+                      <td>3 d<span class="red-text">+1</span>)</td>
                     </tr>
                     <tr>
                       <td style="text-decoration: underline" width="200">
                         Vapiano Paddington, London
                       </td>
-                      <td class="blue-text">
-                        65.5<span class="dark-text"> (0)</span>
+                      <td class="dark-text">
+                        65.5 (<span class="dark-text">0</span>)
                       </td>
-                      <td>12<span class="green-text"> (+5)</span></td>
-                      <td>91.1%<span class="red-text"> (-4%)</span></td>
-                      <td>0 days<span class="green-text"> (-1)</span></td>
+                      <td>12 (<span class="green-text">+5</span>)</td>
+                      <td>91.1% (<span class="red-text">-4%</span>)</td>
+                      <td>0 d (<span class="green-text">-1</span>)</td>
                     </tr>
                   </table>
                 </td>
@@ -828,7 +783,7 @@
 
               <tr>
                 <td align="center" valign="middle" style="font-size: 16px">
-                  86 <span class="green-text">(+13)</span>
+                  86 (+13)
                 </td>
               </tr>
             </table>
@@ -866,7 +821,7 @@
               cellpadding="0"
               cellspacing="0"
               width="100%"
-              style="max-width: 600px"
+              style="max-width: 250px"
               bgcolor="#ffffff"
               class="reviewsTable"
             >
@@ -1124,7 +1079,7 @@
                             <td style="padding-right: 10px">
                               <!-- star  -->
                               <img
-                                src="https://i.postimg.cc/HkKr8bD3/negative.png"
+                              src="https://i.postimg.cc/SKMJ6jm4/positive.png"
                                 alt="negative"
                                 width="100%"
                                 style="max-width: 15px"
@@ -1211,7 +1166,7 @@
                         valign="middle"
                         height="44"
                         style="
-                          font-family: Arial, sans-serif;
+                    
                           font-size: 16px;
                           font-weight: bold;
                         "
@@ -1220,7 +1175,7 @@
                           href="#"
                           target="_blank"
                           style="
-                            font-family: Arial, sans-serif;
+                        
                             color: #ffffff;
                             display: inline-block;
                             text-decoration: none;
@@ -1252,362 +1207,183 @@
           <td height="20" style="font-size: 20px; line-height: 20px"></td>
         </tr>
 
-        <!-- Weekly Summary: Content Analysis -->
+        <!-- Weekly Summary: Content Analysis  -->
 
         <tr>
-          <td align="center" height="100%" valign="middle" width="100%"  style="padding: 20px; border-radius: 15px; background: #ffffff">
-            <!--[if (gte mso 9)|(IE)]>
-            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
-            <tr>
-            <td align="center" valign="middle" width="600">
-            <![endif]-->
+          <td
+            align="center"
+            height="100%"
+            valign="middle"
+            width="100%"
+            style="padding: 30px; border-radius: 15px; background: #ffffff"
+          >
             <table
-              align="center"
+              <table
+              width="100%"
               border="0"
               cellpadding="0"
               cellspacing="0"
-              width="100%"
-              style="max-width: 600px"
-              bgcolor="#ffffff"
             >
+              <!-- CONTENT GOES HERE  -->
+
               <tr>
-                <td align="center" valign="middle" style="font-size: 20px;font-weight: bold;padding-bottom: 10px;">
-                  What did your guests talk about?
-                </td>
-              </tr>
-              <tr>
-                <td align="center" valign="middle" style="font-size: 16px">
-                  <!-- data table  -->
-                  <table  align="center"
-                  border="0"
-                  cellpadding="0"
-                  cellspacing="0"
-                  width="100%">
+                <td align="center" height="100%" valign="top" width="100%">
+                  <!--[if (gte mso 9)|(IE)]>
+  <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+  <tr>
+  <td align="center" valign="top" width="600">
+  <![endif]-->
+                  <table
+                    align="center"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                    style="max-width: 600px"
+                    bgcolor="#ffffff"
+                  >
                     <tr>
                       <td
                         align="center"
-                        height="100%"
-                        valign="middle"
-                        width="100%"
+                        valign="top"
+                        style="
+                          font-size: 20px;
+                          font-weight: bold;
+                          padding: 10px;
+                        "
                       >
-                        <!--[if (gte mso 9)|(IE)]>
-                      <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
-                      <tr>
-                      <td align="center" valign="middle" width="600">
-                      <![endif]-->
-                        <table
-                          align="center"
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          width="100%"
-                          style="max-width: 600px"
-                          bgcolor="#ffffff"
-                          class="ratingtable"
-                        >
+                        What did our guest talk about?
+                      </td>
+                    </tr>
+                  </table>
+                  <!--[if (gte mso 9)|(IE)]>
+  </td>
+  </tr>
+  </table>
+  <![endif]-->
+                </td>
+              </tr>
+
+              <tr>
+                <td align="center" height="100%" valign="top" width="100%">
+                  <!--[if (gte mso 9)|(IE)]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                <tr>
+                <td align="center" valign="top" width="600">
+                <![endif]-->
+                  <table
+                    align="center"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                    style="max-width: 600px"
+                    bgcolor="#ffffff"
+                  >
+                    <tr>
+                      <td align="center" valign="top" style="font-size: 14px">
+                        <!-- main thing  -->
+                        <table>
+                          <th
+                            style="
+                              text-align: left;
+                              font-size: 16px;
+                              padding-right: 20px;
+                              font-weight: bold;
+                            "
+                          >
+                            Category
+                          </th>
+                          <th
+                            style="
+                              text-align: left;
+                              font-size: 16px;
+                              padding-right: 20px;
+                              font-weight: bold;
+                            "
+                          >
+                            Rating
+                          </th>
+                          <th
+                            style="
+                              text-align: left;
+                              font-size: 16px;
+                              padding-right: 20px;
+                              font-weight: bold;
+                            "
+                          >
+                            Mentions
+                          </th>
+
                           <tr>
                             <td
-                              align="center"
-                              valign="middle"
-                              style="font-size: 16px"
-                            >
-                              <table>
-                                <th>Category</th>
-                                <th>Rating</th>
-                                <th>Mentions</th>
+                              height="10"
+                              style="font-size: 10px; line-height: 10px"
+                            ></td>
+                          </tr>
+                          <tr>
+                            <td>Food</td>
+                            <td>3.7 (<span>-0.2</span>)</td>
+                            <td>
+                              <!-- bar -->
+                              <table
+                                align="center"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                style="
+                                  background: #1dc08b;
+                                  color: #ffffff;
+                                  text-align: center;
+                                  font-size: 14px;
+                                  line-height: 14px;
+                                  border-radius: 5px;
+                                  width: 300px;
+                                "
+                                class="main-bar"
+                              >
                                 <tr>
-                                  <td>Food</td>
-                                  <td>
-                                    3.7 <span class="red-text">(-0.2)</span>
-                                  </td>
-                                  <td>
+                                  <td style="width: 150px" class="t150">50%</td>
+                                  <td style="width: 150px" class="t150">
                                     <table
+                                      align="center"
                                       border="0"
                                       cellpadding="0"
                                       cellspacing="0"
                                       style="
-                                        background: #0ac88d;
+                                        background: #feb205;
                                         color: #ffffff;
                                         text-align: center;
-                                        border-radius: 5px;
+                                        font-size: 14px;
+                                        line-height: 14px;
+                                        border-top-right-radius: 5px;
+                                        border-bottom-right-radius: 5px;
                                       "
-                                      width="200"
+                                      width="100%"
                                     >
                                       <tr>
-                                        <td width="50%">50%</td>
-                                        <td width="50%">
-                                          <table
-                                            border="0"
-                                            cellpadding="0"
-                                            cellspacing="0"
-                                            style="
-                                              background: #fdb500;
-                                              color: #ffffff;
-                                              text-align: center;
-                                              border-radius: 5px;
-                                            "
-                                            width="100%"
-                                          >
-                                            <tr>
-                                              <td width="50%">25%</td>
-                                              <td width="50%">
-                                                <table
-                                                  border="0"
-                                                  cellpadding="0"
-                                                  cellspacing="0"
-                                                  width="100%"
-                                                  style="
-                                                    background: #f9516d;
-                                                    color: #ffffff;
-                                                    text-align: center;
-                                                    border-radius: 5px;
-                                                  "
-                                                >
-                                                  <tr>
-                                                    <td width="50%">25%</td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
+                                        <td style="width: 75px" class="t75">
+                                          25%
                                         </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>Service</td>
-                                  <td>
-                                    4.7 <span class="dark-text">(0)</span>
-                                  </td>
-                                  <td>
-                                    <table
-                                      border="0"
-                                      cellpadding="0"
-                                      cellspacing="0"
-                                      style="
-                                        background: #0ac88d;
-                                        color: #ffffff;
-                                        text-align: center;
-                                        border-radius: 5px;
-                                      "
-                                      width="200"
-                                    >
-                                      <tr>
-                                        <td width="50%">50%</td>
-                                        <td width="50%">
+                                        <td style="width: 75px" class="t75">
                                           <table
+                                            align="center"
                                             border="0"
                                             cellpadding="0"
                                             cellspacing="0"
                                             style="
-                                              background: #fdb500;
+                                              background: #fd4a6a;
                                               color: #ffffff;
                                               text-align: center;
-                                              border-radius: 5px;
+                                              font-size: 14px;
+                                              line-height: 14px;
+                                              border-top-right-radius: 5px;
+                                              border-bottom-right-radius: 5px;
                                             "
                                             width="100%"
                                           >
                                             <tr>
-                                              <td width="50%">25%</td>
-                                              <td width="50%">
-                                                <table
-                                                  border="0"
-                                                  cellpadding="0"
-                                                  cellspacing="0"
-                                                  width="100%"
-                                                  style="
-                                                    background: #f9516d;
-                                                    color: #ffffff;
-                                                    text-align: center;
-                                                    border-radius: 5px;
-                                                  "
-                                                >
-                                                  <tr>
-                                                    <td width="50%">25%</td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>Ambiance</td>
-                                  <td>
-                                    2.7 <span class="red-text">(-2.3)</span>
-                                  </td>
-                                  <td>
-                                    <table
-                                      border="0"
-                                      cellpadding="0"
-                                      cellspacing="0"
-                                      style="
-                                        background: #0ac88d;
-                                        color: #ffffff;
-                                        text-align: center;
-                                        border-radius: 5px;
-                                      "
-                                      width="200"
-                                    >
-                                      <tr>
-                                        <td width="50%">50%</td>
-                                        <td width="50%">
-                                          <table
-                                            border="0"
-                                            cellpadding="0"
-                                            cellspacing="0"
-                                            style="
-                                              background: #fdb500;
-                                              color: #ffffff;
-                                              text-align: center;
-                                              border-radius: 5px;
-                                            "
-                                            width="100%"
-                                          >
-                                            <tr>
-                                              <td width="50%">25%</td>
-                                              <td width="50%">
-                                                <table
-                                                  border="0"
-                                                  cellpadding="0"
-                                                  cellspacing="0"
-                                                  width="100%"
-                                                  style="
-                                                    background: #f9516d;
-                                                    color: #ffffff;
-                                                    text-align: center;
-                                                    border-radius: 5px;
-                                                  "
-                                                >
-                                                  <tr>
-                                                    <td width="50%">25%</td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>Facilities</td>
-                                  <td>
-                                    3.9 <span class="green-text">(+0.1)</span>
-                                  </td>
-                                  <td>
-                                    <table
-                                      border="0"
-                                      cellpadding="0"
-                                      cellspacing="0"
-                                      style="
-                                        background: #0ac88d;
-                                        color: #ffffff;
-                                        text-align: center;
-                                        border-radius: 5px;
-                                      "
-                                      width="200"
-                                    >
-                                      <tr>
-                                        <td width="50%">50%</td>
-                                        <td width="50%">
-                                          <table
-                                            border="0"
-                                            cellpadding="0"
-                                            cellspacing="0"
-                                            style="
-                                              background: #fdb500;
-                                              color: #ffffff;
-                                              text-align: center;
-                                              border-radius: 5px;
-                                            "
-                                            width="100%"
-                                          >
-                                            <tr>
-                                              <td width="50%">25%</td>
-                                              <td width="50%">
-                                                <table
-                                                  border="0"
-                                                  cellpadding="0"
-                                                  cellspacing="0"
-                                                  width="100%"
-                                                  style="
-                                                    background: #f9516d;
-                                                    color: #ffffff;
-                                                    text-align: center;
-                                                    border-radius: 5px;
-                                                  "
-                                                >
-                                                  <tr>
-                                                    <td width="50%">25%</td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>Value</td>
-                                  <td>
-                                    4.0 <span class="red-text">(-0.2)</span>
-                                  </td>
-                                  <td>
-                                    <table
-                                      border="0"
-                                      cellpadding="0"
-                                      cellspacing="0"
-                                      style="
-                                        background: #0ac88d;
-                                        color: #ffffff;
-                                        text-align: center;
-                                        border-radius: 5px;
-                                      "
-                                      width="200"
-                                    >
-                                      <tr>
-                                        <td width="50%">50%</td>
-                                        <td width="50%">
-                                          <table
-                                            border="0"
-                                            cellpadding="0"
-                                            cellspacing="0"
-                                            style="
-                                              background: #fdb500;
-                                              color: #ffffff;
-                                              text-align: center;
-                                              border-radius: 5px;
-                                            "
-                                            width="100%"
-                                          >
-                                            <tr>
-                                              <td width="50%">25%</td>
-                                              <td width="50%">
-                                                <table
-                                                  border="0"
-                                                  cellpadding="0"
-                                                  cellspacing="0"
-                                                  width="100%"
-                                                  style="
-                                                    background: #f9516d;
-                                                    color: #ffffff;
-                                                    text-align: center;
-                                                    border-radius: 5px;
-                                                  "
-                                                >
-                                                  <tr>
-                                                    <td width="50%">25%</td>
-                                                  </tr>
-                                                </table>
-                                              </td>
+                                              <td>25%</td>
                                             </tr>
                                           </table>
                                         </td>
@@ -1616,30 +1392,356 @@
                                   </td>
                                 </tr>
                               </table>
+                              <!-- bar -->
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td
+                              height="10"
+                              style="font-size: 10px; line-height: 10px"
+                            ></td>
+                          </tr>
+
+                          <tr>
+                            <td>Service</td>
+                            <td>4.7 (<span>0</span>)</td>
+                            <td>
+                              <!-- bar -->
+                              <table
+                                align="center"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                style="
+                                  background: #1dc08b;
+                                  color: #ffffff;
+                                  text-align: center;
+                                  font-size: 14px;
+                                  line-height: 14px;
+                                  border-radius: 5px;
+                                  width: 300px;
+                                "
+                                class="main-bar"
+                              >
+                                <tr>
+                                  <td style="width: 150px" class="t150">50%</td>
+                                  <td style="width: 150px" class="t150">
+                                    <table
+                                      align="center"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      style="
+                                        background: #feb205;
+                                        color: #ffffff;
+                                        text-align: center;
+                                        font-size: 14px;
+                                        line-height: 14px;
+                                        border-top-right-radius: 5px;
+                                        border-bottom-right-radius: 5px;
+                                      "
+                                      width="100%"
+                                    >
+                                      <tr>
+                                        <td style="width: 75px" class="t75">
+                                          25%
+                                        </td>
+                                        <td style="width: 75px" class="t75">
+                                          <table
+                                            align="center"
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            style="
+                                              background: #fd4a6a;
+                                              color: #ffffff;
+                                              text-align: center;
+                                              font-size: 14px;
+                                              line-height: 14px;
+                                              border-top-right-radius: 5px;
+                                              border-bottom-right-radius: 5px;
+                                            "
+                                            width="100%"
+                                          >
+                                            <tr>
+                                              <td>25%</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- bar -->
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td
+                              height="10"
+                              style="font-size: 10px; line-height: 10px"
+                            ></td>
+                          </tr>
+
+                          <tr>
+                            <td>Ambiance</td>
+                            <td>2.7 (<span class="red-text">-2.3</span>)</td>
+                            <td>
+                              <!-- bar -->
+                              <table
+                                align="center"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                style="
+                                  background: #1dc08b;
+                                  color: #ffffff;
+                                  text-align: center;
+                                  font-size: 14px;
+                                  line-height: 14px;
+                                  border-radius: 5px;
+                                  width: 300px;
+                                "
+                                class="main-bar"
+                              >
+                                <tr>
+                                  <td style="width: 150px" class="t150">50%</td>
+                                  <td style="width: 150px" class="t150">
+                                    <table
+                                      align="center"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      style="
+                                        background: #feb205;
+                                        color: #ffffff;
+                                        text-align: center;
+                                        font-size: 14px;
+                                        line-height: 14px;
+                                        border-top-right-radius: 5px;
+                                        border-bottom-right-radius: 5px;
+                                      "
+                                      width="100%"
+                                    >
+                                      <tr>
+                                        <td style="width: 75px" class="t75">
+                                          25%
+                                        </td>
+                                        <td style="width: 75px" class="t75">
+                                          <table
+                                            align="center"
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            style="
+                                              background: #fd4a6a;
+                                              color: #ffffff;
+                                              text-align: center;
+                                              font-size: 14px;
+                                              line-height: 14px;
+                                              border-top-right-radius: 5px;
+                                              border-bottom-right-radius: 5px;
+                                            "
+                                            width="100%"
+                                          >
+                                            <tr>
+                                              <td>25%</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- bar -->
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td
+                              height="10"
+                              style="font-size: 10px; line-height: 10px"
+                            ></td>
+                          </tr>
+
+                          <tr>
+                            <td>Facilities</td>
+                            <td>3.9 (<span class="green-text">+0.1</span>)</td>
+                            <td>
+                              <!-- bar -->
+                              <table
+                                align="center"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                style="
+                                  background: #03d090;
+                                  color: #ffffff;
+                                  text-align: center;
+                                  font-size: 14px;
+                                  line-height: 14px;
+                                  border-radius: 5px;
+                                  width: 300px;
+                                "
+                                class="main-bar"
+                              >
+                                <tr>
+                                  <td style="width: 150px" class="t150">50%</td>
+                                  <td style="width: 150px" class="t150">
+                                    <table
+                                      align="center"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      style="
+                                        background: #feb205;
+                                        color: #ffffff;
+                                        text-align: center;
+                                        font-size: 14px;
+                                        line-height: 14px;
+                                        border-top-right-radius: 5px;
+                                        border-bottom-right-radius: 5px;
+                                      "
+                                      width="100%"
+                                    >
+                                      <tr>
+                                        <td style="width: 75px" class="t75">
+                                          25%
+                                        </td>
+                                        <td style="width: 75px" class="t75">
+                                          <table
+                                            align="center"
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            style="
+                                              background: #fd4a6a;
+                                              color: #ffffff;
+                                              text-align: center;
+                                              font-size: 14px;
+                                              line-height: 14px;
+                                              border-top-right-radius: 5px;
+                                              border-bottom-right-radius: 5px;
+                                            "
+                                            width="100%"
+                                          >
+                                            <tr>
+                                              <td>25%</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- bar -->
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td
+                              height="10"
+                              style="font-size: 10px; line-height: 10px"
+                            ></td>
+                          </tr>
+
+                          <tr>
+                            <td>Value</td>
+                            <td>4.0 (<span class="red-text">-0.2</span>)</td>
+                            <td>
+                              <!-- bar -->
+                              <table
+                                align="center"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                style="
+                                  background: #1dc08b;
+                                  color: #ffffff;
+                                  text-align: center;
+                                  font-size: 14px;
+                                  line-height: 14px;
+                                  border-radius: 5px;
+                                  width: 300px;
+                                "
+                                class="main-bar"
+                              >
+                                <tr>
+                                  <td style="width: 150px" class="t150">50%</td>
+                                  <td style="width: 150px" class="t150">
+                                    <table
+                                      align="center"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      style="
+                                        background: #feb205;
+                                        color: #ffffff;
+                                        text-align: center;
+                                        font-size: 14px;
+                                        line-height: 14px;
+                                        border-top-right-radius: 5px;
+                                        border-bottom-right-radius: 5px;
+                                      "
+                                      width="100%"
+                                    >
+                                      <tr>
+                                        <td style="width: 75px" class="t75">
+                                          25%
+                                        </td>
+                                        <td style="width: 75px" class="t75">
+                                          <table
+                                            align="center"
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            style="
+                                              background: #fd4a6a;
+                                              color: #ffffff;
+                                              text-align: center;
+                                              font-size: 14px;
+                                              line-height: 14px;
+                                              border-top-right-radius: 5px;
+                                              border-bottom-right-radius: 5px;
+                                            "
+                                            width="100%"
+                                          >
+                                            <tr>
+                                              <td>25%</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- bar -->
                             </td>
                           </tr>
                         </table>
-                        <!--[if (gte mso 9)|(IE)]>
-                      </td>
-                      </tr>
-                      </table>
-                      <![endif]-->
+                        <!-- main thing  -->
                       </td>
                     </tr>
                   </table>
-                  <!-- data table  -->
+                  <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
                 </td>
               </tr>
+
+              <!-- CONTENT GOES HERE  -->
             </table>
-            <!--[if (gte mso 9)|(IE)]>
-            </td>
-            </tr>
-            </table>
-            <![endif]-->
           </td>
         </tr>
 
-        <!-- Weekly Summary: Content Analysis -->
+     <!-- Weekly Summary: Content Analysis -->
         
         <tr>
           <td height="20" style="font-size:20px; line-height:20px;"></td>
